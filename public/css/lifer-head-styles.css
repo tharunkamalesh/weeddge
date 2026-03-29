@@ -103,3 +103,27 @@ html.lenis, html.lenis body {
     cursor: grabbing;
   }
 
+  /* EDDGE brand mark (PNG) */
+  img.eddge-brand-logo {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: contain;
+    object-position: left center;
+    display: block;
+  }
+
+  img.eddge-preloader-logo {
+    width: 77px;
+    height: 77px;
+    object-fit: contain;
+    display: block;
+  }
+
+  img.eddge-footer-logo {
+    height: 2.75rem;
+    width: auto;
+    max-width: 10rem;
+    object-fit: contain;
+    display: block;
+  }
+

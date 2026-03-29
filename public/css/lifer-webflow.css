@@ -2111,7 +2111,7 @@ textarea.w-input, textarea.w-select {
   --base-color-brand--red: #ff351a;
   --base-color-brand--pink-dark: #3c043b;
   --base-color-brand--transparent: transparent;
-  --base-color-brand--bg-gradient-lavender: #f4e4ff;
+  --base-color-brand--bg-gradient-lavender: #e8f5e9;
   --base-color-brand--hero-button-color: #261d26;
   --base-color-neutral--black: #322e24;
   --base-color-neutral--white: white;
@@ -2130,7 +2130,7 @@ textarea.w-input, textarea.w-select {
   --base-color-system--warning-yellow-dark: #5e5515;
   --base-color-system--error-red: #f8e4e4;
   --base-color-system--error-red-dark: #3b0b0b;
-  --base-color-system--focus-state: #2d62ff;
+  --base-color-system--focus-state: #2e7d32;
   --animation-color--results-glucose-shadow-label: #00000012;
   --animation-size--width-about-char-gradient: .25rem;
   --animation-size--results-glucose-stroke-dashoffset: 0px;
@@ -2829,7 +2829,7 @@ h6 {
 .fs-styleguide_header {
   color: #fff;
   background-color: #fff;
-  background-image: radial-gradient(circle at 100% 100%, #dd23bb40, #0000 40%), radial-gradient(circle at 0 100%, #2d62ff4d, #0000 60%);
+  background-image: radial-gradient(circle at 100% 100%, #2e7d3240, #0000 40%), radial-gradient(circle at 0 100%, #00695c4d, #0000 60%);
 }
 
 .time_wrapper {
@@ -3328,7 +3328,7 @@ h6 {
 .btn-navbar-bg-hover {
   opacity: 0;
   background-color: #fff;
-  background-image: linear-gradient(216deg, #ffe7c5 2%, #fff4e499 22%, #fff0 34%), linear-gradient(48deg, #dcafff 2%, #f1deff66 13%, #fff0 29%);
+  background-image: linear-gradient(216deg, #dcedc8 2%, #f1f8e999 22%, #fff0 34%), linear-gradient(48deg, #b9f6ca 2%, #c8e6c966 13%, #fff0 29%);
   width: 100%;
   height: 100%;
   transition: opacity .35s ease-in-out;
@@ -3512,7 +3512,7 @@ h6 {
 .button_bg-gradient {
   z-index: -1;
   opacity: 0;
-  background-image: linear-gradient(90deg, #f4e4ff, #fff2dd);
+  background-image: linear-gradient(90deg, #e8f5e9, #f1f8e9);
   width: 100%;
   height: 100%;
   transition: opacity .3s ease-in-out;
@@ -3902,7 +3902,7 @@ h6 {
 }
 
 .results_glucose-box {
-  background-image: linear-gradient(90deg, #2b58e0, #d638a9 22%, #982fd8 61%, #ffbb37);
+  background-image: linear-gradient(90deg, #004d40, #00695c 22%, #2e7d32 61%, #aed581);
   justify-content: center;
   align-items: center;
   width: 4.5rem;
@@ -4039,7 +4039,7 @@ h6 {
 .standart_card-bg {
   z-index: 0;
   opacity: 0;
-  background-image: linear-gradient(90deg, #f4e4ff, #fff2dd);
+  background-image: linear-gradient(90deg, #e8f5e9, #f1f8e9);
   transition: opacity .3s ease-in-out;
   position: absolute;
   inset: 0%;

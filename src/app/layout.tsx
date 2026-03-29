@@ -24,11 +24,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
         />
-        <link
-          rel="shortcut icon"
-          href="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3edf7832ac7ba941c2e4c_favicon.ico"
-          type="image/x-icon"
-        />
+        <link rel="icon" href="/eddge-logo.png" type="image/png" />
       </head>
       <body suppressHydrationWarning>
         <Script id="lifer-webflow-preamble" strategy="beforeInteractive">

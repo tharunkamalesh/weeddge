@@ -309,7 +309,9 @@ function initHoverButton() {
       let charsBtnHero = buttonContainer.querySelectorAll('.char-inner');
 
       buttonContainer.addEventListener('mouseenter', () => {
-        starHeroButton.pause();
+        if (starHeroButton && typeof starHeroButton.pause === "function") {
+          starHeroButton.pause();
+        }
         let tl = gsap.timeline();
         tl.to(charsBtnHero, {
             yPercent: -102,
@@ -333,7 +335,9 @@ function initHoverButton() {
       });
 
       buttonContainer.addEventListener('mouseleave', () => {
-        starHeroButton.resume();
+        if (starHeroButton && typeof starHeroButton.resume === "function") {
+          starHeroButton.resume();
+        }
         let tl = gsap.timeline();
         tl.to(charsBtnHero, {
             yPercent: 0,

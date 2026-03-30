@@ -127,7 +127,7 @@ html.lenis, html.lenis body {
     display: block;
   }
 
-  /* EDDGE answer section: centered layout + green glow */
+  /* EDDGE answer section: centered layout + #5efa88 glow */
   .section_answer .answer_content {
     align-items: center;
     justify-content: center;
@@ -137,8 +137,8 @@ html.lenis, html.lenis body {
     text-align: center;
     overflow: hidden;
     background:
-      radial-gradient(circle at 50% 80%, rgba(129, 199, 132, 0.22) 0%, rgba(255, 255, 255, 0) 50%),
-      linear-gradient(180deg, #ffffff 0%, #f7fcf8 100%);
+      radial-gradient(circle at 50% 80%, rgba(94, 250, 136, 0.20) 0%, rgba(94, 250, 136, 0) 50%),
+      linear-gradient(180deg, #ffffff 0%, rgba(94, 250, 136, 0.10) 100%);
   }
 
   .section_answer .answer_image-wrapper {
@@ -161,7 +161,7 @@ html.lenis, html.lenis body {
     height: min(24rem, 82vw);
     border-radius: 999px;
     background:
-      radial-gradient(circle, rgba(102, 187, 106, 0.36) 0%, rgba(165, 214, 167, 0.2) 45%, rgba(255, 255, 255, 0) 72%);
+      radial-gradient(circle, rgba(94, 250, 136, 0.45) 0%, rgba(94, 250, 136, 0.18) 45%, rgba(94, 250, 136, 0) 72%);
     filter: blur(14px);
     z-index: 0;
   }
@@ -172,11 +172,10 @@ html.lenis, html.lenis body {
     width: min(18rem, 68vw);
     height: auto;
     display: block;
-    /* Glow: multiple green soft halos + subtle lift shadow */
     filter:
-      drop-shadow(0 0 10px rgba(46, 125, 50, 0.35))
-      drop-shadow(0 0 22px rgba(129, 199, 132, 0.25))
-      drop-shadow(0 12px 24px rgba(27, 94, 32, 0.18));
+      drop-shadow(0 0 10px rgba(94, 250, 136, 0.45))
+      drop-shadow(0 0 24px rgba(94, 250, 136, 0.30))
+      drop-shadow(0 12px 24px rgba(94, 250, 136, 0.20));
   }
 
   @media screen and (max-width: 767px) {
@@ -236,9 +235,9 @@ html.lenis, html.lenis body {
     color: #1b5e20;
     padding: 0.35rem 0.65rem;
     border-radius: 999px;
-    background: linear-gradient(90deg, rgba(232, 245, 233, 0.95), rgba(241, 248, 233, 0.98));
-    border: 1px solid rgba(46, 125, 50, 0.2);
-    box-shadow: 0 1px 2px rgba(13, 80, 60, 0.06);
+    background: linear-gradient(90deg, rgba(94, 250, 136, 0.14), rgba(94, 250, 136, 0.08));
+    border: 1px solid rgba(94, 250, 136, 0.45);
+    box-shadow: 0 1px 2px rgba(94, 250, 136, 0.18);
   }
 
   .eddge-hero-secondary-cta {
@@ -248,14 +247,14 @@ html.lenis, html.lenis body {
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
-    border: 1px solid rgba(46, 125, 50, 0.35);
+    border: 1px solid rgba(94, 250, 136, 0.45);
     background: rgba(255, 255, 255, 0.65);
     transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
 
   .eddge-hero-secondary-cta:hover {
-    background: rgba(232, 245, 233, 0.9);
-    border-color: rgba(27, 94, 32, 0.45);
+    background: rgba(94, 250, 136, 0.15);
+    border-color: rgba(94, 250, 136, 0.60);
     color: #1b5e20;
   }
 
@@ -283,43 +282,50 @@ html.lenis, html.lenis body {
     }
   }
 
-  /* EDDGE gradient retheme: hero + about sections */
+  /* ── #5efa88 ONLY — hero + about gradient theme ── */
+
+  /* Hero: three #5efa88 radial blobs + a clean white-to-#5efa88 base */
   .section_hero .hero_overflow-hidden {
-    /* Keep Webflow SVG background and add green-tinted overlays on top */
     background-image:
-      radial-gradient(ellipse 92% 70% at 50% 100%, rgba(129, 199, 132, 0.26) 0%, rgba(255, 255, 255, 0) 62%),
-      radial-gradient(ellipse 58% 48% at 86% 76%, rgba(174, 213, 129, 0.22) 0%, rgba(255, 255, 255, 0) 58%),
-      radial-gradient(ellipse 55% 45% at 12% 72%, rgba(102, 187, 106, 0.2) 0%, rgba(255, 255, 255, 0) 54%),
-      linear-gradient(165deg, rgba(243, 251, 246, 0.95) 0%, rgba(255, 255, 255, 0.98) 42%, rgba(238, 248, 240, 0.98) 100%),
-      url("https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5321947f7c29785ab2c_radial%20gradient%20bottom.svg");
+      radial-gradient(ellipse 90% 65% at 50% 108%, rgba(94, 250, 136, 0.48) 0%, rgba(94, 250, 136, 0) 62%),
+      radial-gradient(ellipse 60% 50% at 88% 82%, rgba(94, 250, 136, 0.30) 0%, rgba(94, 250, 136, 0) 56%),
+      radial-gradient(ellipse 58% 48% at 10% 80%, rgba(94, 250, 136, 0.28) 0%, rgba(94, 250, 136, 0) 56%),
+      linear-gradient(165deg, #ffffff 0%, #ffffff 40%, rgba(94, 250, 136, 0.12) 100%);
   }
 
+  /* Grid overlay — shift to #5efa88 hue */
   .section_hero .hero_bg-image img {
-    opacity: 0.4 !important;
-    /* Force hero grid tint to green */
-    filter: hue-rotate(105deg) saturate(1.35) brightness(1.02) contrast(0.96) !important;
+    opacity: 0.28 !important;
+    filter: hue-rotate(155deg) saturate(1.5) brightness(1.05) contrast(0.94) !important;
     mix-blend-mode: multiply !important;
   }
 
+  /*
+   * ALL hero blob images — hero_blur-*, hero_top-blur-*, and anything
+   * inside hero_gradient-root — are pink/purple at source.
+   * hue-rotate(175°) shifts them onto #5efa88 green.
+   */
+  .section_hero .blur img,
+  .section_hero [class*="hero_blur"] img,
+  .section_hero [class*="hero_top-blur"] img,
   .section_hero .hero_gradient-root .blur img {
-    /* Force blur assets tint to green */
-    filter: hue-rotate(98deg) saturate(1.4) brightness(1.03) contrast(0.95) !important;
-    opacity: 0.92 !important;
+    filter: hue-rotate(175deg) saturate(1.8) brightness(1.06) contrast(0.88) !important;
+    opacity: 0.85 !important;
     mix-blend-mode: multiply !important;
   }
 
+  /* About: single top radial + white-to-#5efa88 base */
   .section_about .about_content-wrapper {
-    /* Keep Webflow gradient-top background and overlay green tint */
     background-image:
-      radial-gradient(ellipse 95% 82% at 50% -6%, rgba(165, 214, 167, 0.24) 0%, rgba(255, 255, 255, 0) 58%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(245, 251, 247, 0.96) 54%, rgba(238, 248, 241, 0.98) 100%),
-      url("https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5531947f7c29785bc80_about%20gradient%20top.webp");
+      radial-gradient(ellipse 95% 80% at 50% -8%, rgba(94, 250, 136, 0.32) 0%, rgba(94, 250, 136, 0) 56%),
+      linear-gradient(180deg, #ffffff 0%, rgba(94, 250, 136, 0.10) 54%, rgba(94, 250, 136, 0.16) 100%);
   }
 
+  .section_about .blur img,
+  .section_about [class*="about_blur"] img,
   .section_about .about_gradient-root .blur img {
-    /* Force about blur assets tint to green */
-    filter: hue-rotate(92deg) saturate(1.42) brightness(1.03) contrast(0.95) !important;
-    opacity: 0.9 !important;
+    filter: hue-rotate(175deg) saturate(1.8) brightness(1.06) contrast(0.88) !important;
+    opacity: 0.80 !important;
     mix-blend-mode: multiply !important;
   }
 

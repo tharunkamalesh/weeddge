@@ -2735,7 +2735,7 @@ h6 {
 }
 
 .time_content {
-  background-image: url("https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5301947f7c29785a450_time%20img.webp");
+  background-image: url("/premium_tutor.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5884,7 +5884,7 @@ h6 {
   }
 
   .time_content {
-    background-image: url("https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5331947f7c29785ab4d_time%20img%20mob.webp");
+    background-image: url("/premium_tutor.jpg");
     border-radius: 1.25rem;
     min-height: 16.25rem;
     padding: 1.5rem;

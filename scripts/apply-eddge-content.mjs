@@ -20,15 +20,15 @@ const pairs = [
   ['<div class="nav_brand-text">Lifer</div>', '<div class="nav_brand-text">EDDGE</div>'],
   [
     '<a href="#" class="nav_menu_link">Benefits</a><a href="#" class="nav_menu_link">Blog</a><a href="#" class="nav_menu_link">Prices</a><a href="#" class="nav_menu_link">Contacts</a><a href="#" class="nav_menu_link">Why Lifer</a><a href="#" class="nav_menu_link">Partnership</a>',
-    '<a href="#" class="nav_menu_link">Product</a><a href="#" class="nav_menu_link">How It Works</a><a href="#" class="nav_menu_link">Pricing</a><a href="#" class="nav_menu_link">Contact</a><a href="#" class="nav_menu_link">For Students</a><a href="#" class="nav_menu_link">For Schools</a>',
+    '<a href="/#Product-section" class="nav_menu_link">Product</a><a href="/#How-it-works-section" class="nav_menu_link">How It Works</a><a href="/#Pricing-section" class="nav_menu_link">Pricing</a><a href="/#Contact-section" class="nav_menu_link">Contact</a><a href="/#Students-section" class="nav_menu_link">For Students</a><a href="/#Pricing-section" class="nav_menu_link">For Schools</a>',
   ],
   [
     '<a data-lenis-start="" href="#" class="nav_menu_link">Benefits</a><a data-lenis-start="" href="#" class="nav_menu_link">Blog</a><a data-lenis-start="" href="#" class="nav_menu_link">Prices</a><a data-lenis-start="" href="#" class="nav_menu_link">Contacts</a><a data-lenis-start="" href="#" class="nav_menu_link">Why Lifer</a><a data-lenis-start="" href="#" class="nav_menu_link">Partnership</a>',
-    '<a data-lenis-start="" href="#" class="nav_menu_link">Product</a><a data-lenis-start="" href="#" class="nav_menu_link">How It Works</a><a data-lenis-start="" href="#" class="nav_menu_link">Pricing</a><a data-lenis-start="" href="#" class="nav_menu_link">Contact</a><a data-lenis-start="" href="#" class="nav_menu_link">For Students</a><a data-lenis-start="" href="#" class="nav_menu_link">For Schools</a>',
+    '<a data-lenis-start="" href="/#Product-section" class="nav_menu_link">Product</a><a data-lenis-start="" href="/#How-it-works-section" class="nav_menu_link">How It Works</a><a data-lenis-start="" href="/#Pricing-section" class="nav_menu_link">Pricing</a><a data-lenis-start="" href="/#Contact-section" class="nav_menu_link">Contact</a><a data-lenis-start="" href="/#Students-section" class="nav_menu_link">For Students</a><a data-lenis-start="" href="/#Pricing-section" class="nav_menu_link">For Schools</a>',
   ],
   [
     '<a href="#" class="text-size-14px">Instagram</a><a href="#" class="text-size-14px">Facebook</a><a href="#" class="text-size-14px">Linkedin</a>',
-    '<a href="#" class="text-size-14px">LinkedIn</a><a href="#" class="text-size-14px">X</a><a href="#" class="text-size-14px">YouTube</a>',
+    '<a href="https://www.linkedin.com/" class="text-size-14px">LinkedIn</a><a href="https://x.com/" class="text-size-14px">X</a><a href="https://www.youtube.com/" class="text-size-14px">YouTube</a>',
   ],
   ['<div js-char-button="" class="button-label">Share Your Story</div>', '<div js-char-button="" class="button-label">Start Learning Free</div>'],
   ['<div js-char-button="" class="button-label">Book a Free Call</div>', '<div js-char-button="" class="button-label">Request School Demo</div>'],
@@ -105,7 +105,7 @@ const pairs = [
   ['<div class="text-size-12px">© 2024 Lifer. All rights reserved</div>', '<div class="text-size-12px">© 2026 EDDGE. All rights reserved</div>'],
   [
     '<a href="#" class="footer_link text-weight-light">Terms of Use</a><a href="#" class="footer_link text-weight-light">Terms of Use</a>',
-    '<a href="#" class="footer_link text-weight-light">Terms of Service</a><a href="#" class="footer_link text-weight-light">Cookie Policy</a>',
+    '<a href="/terms-of-service" class="footer_link text-weight-light">Terms of Service</a><a href="/cookie-policy" class="footer_link text-weight-light">Cookie Policy</a>',
   ],
   [
     '<span>Built by the sea in </span><span class="footer-image-span"><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5321947f7c29785aadb_ua.png" alt="" class="image"/></span><span>\xa0Ukraine by Glow Design Agency</span>',
@@ -126,6 +126,21 @@ s = s.replace(
   /<p class="text-size-16px">Use powerful insights of a CGM combined with real-time coaching to achieve meaningful goals\.<\/p>/,
   "<p class=\"text-size-16px\">EDDGE combines AI tutoring, practice, and analytics so every study session moves the needle.</p>"
 );
+
+// Keep key nav/footer links functional after re-applying content transforms.
+s = s
+  .replace(/href="#" class="button is-navbar-small w-inline-block"/g, 'href="/#Students-section" class="button is-navbar-small w-inline-block"')
+  .replace(/href="#" class="button is-navbar-animation w-inline-block"/g, 'href="/#Contact-section" class="button is-navbar-animation w-inline-block"')
+  .replace(/href="#" class="button is-mob w-inline-block"/g, 'href="/#Hero-section" class="button is-mob w-inline-block"')
+  .replace(/data-gsap-button-hero="" data-btn-hero-gradient="" href="#" class="button is-hero-section w-inline-block"/g, 'data-gsap-button-hero="" data-btn-hero-gradient="" href="/#Students-section" class="button is-hero-section w-inline-block"')
+  .replace(/href="#" class="footer_link">Overview/g, 'href="/#Product-section" class="footer_link">Overview')
+  .replace(/href="#" class="footer_link">Features/g, 'href="/#Features-section" class="footer_link">Features')
+  .replace(/href="#" class="footer_link">Pricing/g, 'href="/#Pricing-section" class="footer_link">Pricing')
+  .replace(/href="#" class="footer_link">Careers/g, 'href="/#Contact-section" class="footer_link">Careers')
+  .replace(/href="#" class="footer_link">Help/g, 'href="/#Help-section" class="footer_link">Help')
+  .replace(/href="#" class="footer_link">Privacy/g, 'href="/privacy-policy" class="footer_link">Privacy')
+  .replace(/href="#" class="footer_link text-weight-light">Privacy Policy/g, 'href="/privacy-policy" class="footer_link text-weight-light">Privacy Policy')
+  .replace(/data-gsap-answer-button="" class="answer_button"><a data-gsap-button="" href="#" class="button is-secondary w-inline-block"/g, 'data-gsap-answer-button="" class="answer_button"><a data-gsap-button="" href="/#Contact-section" class="button is-secondary w-inline-block"');
 
 fs.writeFileSync(htmlPath, s);
 console.log("Updated", htmlPath);

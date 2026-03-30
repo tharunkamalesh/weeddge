@@ -40,10 +40,6 @@ const pairs = [
   ],
   ['<div class="button-label">Start The 4-Week Program</div>', '<div class="button-label">Start Learning Free</div>'],
   [
-    '<p class="text-size-16px text-weight-medium text-size-18px">“Within just one week, we had identified the problem, tested a solution and validated the results. And I did it all by simply messaging with my care team within the Steady app.”</p><p class="text-size-12px text-size-14px">Parteek, November 2019</p>',
-    '<p class="text-size-16px text-weight-medium text-size-18px">“EDDGE helped me understand organic chemistry in a way my textbook never could.”</p><p class="text-size-12px text-size-14px">Ananya, Grade 12</p>',
-  ],
-  [
     '<p class="trusted-heading">Trusted by <strong class="text-weight-medium text-color-primary">3,450+</strong> happy customers from the whole world</p>',
     '<p class="trusted-heading">Used by <strong class="text-weight-medium text-color-primary">students</strong> across schools in India</p>',
   ],
@@ -121,6 +117,14 @@ for (const [a, b] of pairs) {
   }
 }
 
+// Legacy "Steady app" testimonial normalization:
+// - Do NOT hard-code the old author name/date
+// - Match the testimonial by its content shape instead
+s = s.replace(
+  /<p class="text-size-16px text-weight-medium text-size-18px">“[\s\S]*?care team[\s\S]*?Steady app\.”<\/p>\s*<p class="text-size-12px text-size-14px">[^<]*<\/p>/g,
+  '<p class="text-size-16px text-weight-medium text-size-18px">“EDDGE helped me understand organic chemistry in a way my textbook never could.”</p><p class="text-size-12px text-size-14px">Ananya, Grade 12</p>',
+);
+
 // Results section closing blurb (was CGM + coaching copy)
 s = s.replace(
   /<p class="text-size-16px">Use powerful insights of a CGM combined with real-time coaching to achieve meaningful goals\.<\/p>/,
@@ -132,6 +136,7 @@ s = s
   .replace(/href="#" class="button is-navbar-small w-inline-block"/g, 'href="/#Students-section" class="button is-navbar-small w-inline-block"')
   .replace(/href="#" class="button is-navbar-animation w-inline-block"/g, 'href="/#Contact-section" class="button is-navbar-animation w-inline-block"')
   .replace(/href="#" class="button is-mob w-inline-block"/g, 'href="/#Hero-section" class="button is-mob w-inline-block"')
+  .replace(/href="#" class="nav_button is-mob w-inline-block"/g, 'href="/#Hero-section" class="nav_button is-mob w-inline-block"')
   .replace(/data-gsap-button-hero="" data-btn-hero-gradient="" href="#" class="button is-hero-section w-inline-block"/g, 'data-gsap-button-hero="" data-btn-hero-gradient="" href="/#Students-section" class="button is-hero-section w-inline-block"')
   .replace(/href="#" class="footer_link">Overview/g, 'href="/#Product-section" class="footer_link">Overview')
   .replace(/href="#" class="footer_link">Features/g, 'href="/#Features-section" class="footer_link">Features')
@@ -140,6 +145,13 @@ s = s
   .replace(/href="#" class="footer_link">Help/g, 'href="/#Help-section" class="footer_link">Help')
   .replace(/href="#" class="footer_link">Privacy/g, 'href="/privacy-policy" class="footer_link">Privacy')
   .replace(/href="#" class="footer_link text-weight-light">Privacy Policy/g, 'href="/privacy-policy" class="footer_link text-weight-light">Privacy Policy')
+  // Landing CTAs (keep these non-placeholder across re-runs)
+  .replace(/href="#" class="button is-icon w-inline-block"/g, 'href="/benefits" class="button is-icon w-inline-block"')
+  .replace(/href="#" class="button is-small w-inline-block"/g, 'href="/prices" class="button is-small w-inline-block"')
+  .replace(/href="#" class="button is-small is-blur w-inline-block"/g, 'href="/prices" class="button is-small is-blur w-inline-block"')
+  .replace(/href="#" class="button is-secondary w-inline-block"/g, 'href="/prices" class="button is-secondary w-inline-block"')
+  .replace(/href="#" class="button w-inline-block"/g, 'href="/contacts" class="button w-inline-block"')
+  .replace(/href="#" class="button is-blur w-inline-block"/g, 'href="/prices" class="button is-blur w-inline-block"')
   .replace(/data-gsap-answer-button="" class="answer_button"><a data-gsap-button="" href="#" class="button is-secondary w-inline-block"/g, 'data-gsap-answer-button="" class="answer_button"><a data-gsap-button="" href="/#Contact-section" class="button is-secondary w-inline-block"');
 
 fs.writeFileSync(htmlPath, s);

@@ -1,4 +1,4 @@
-html {
+﻿html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
@@ -190,27 +190,27 @@ td, th {
 }
 
 .w-icon-slider-right:before {
-  content: "";
+  content: "î˜€";
 }
 
 .w-icon-slider-left:before {
-  content: "";
+  content: "î˜";
 }
 
 .w-icon-nav-menu:before {
-  content: "";
+  content: "î˜‚";
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-  content: "";
+  content: "î˜ƒ";
 }
 
 .w-icon-file-upload-remove:before {
-  content: "";
+  content: "î¤€";
 }
 
 .w-icon-file-upload-icon:before {
-  content: "";
+  content: "î¤ƒ";
 }
 
 * {
@@ -2108,7 +2108,7 @@ textarea.w-input, textarea.w-select {
   --text-color--text-primary: var(--base-color-neutral--neutral-darkest);
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--steel-blue: #7a8599;
-  --base-color-brand--сream: #fff9f2;
+  --base-color-brand--Ñream: #fff9f2;
   --base-color-brand--green: #5eb77c;
   --base-color-brand--red: #ff351a;
   --base-color-brand--pink-dark: #3c043b;
@@ -2157,7 +2157,7 @@ textarea.w-input, textarea.w-select {
   --global-size--glucose-border-with: .1875rem;
   --background-color--background-primary: var(--base-color-neutral--white);
   --background-color--background-secondary: var(--base-color-brand--steel-blue);
-  --background-color--background-сream: var(--base-color-brand--сream);
+  --background-color--background-Ñream: var(--base-color-brand--Ñream);
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --background-color--background-warning: var(--base-color-system--warning-yellow);
@@ -2698,7 +2698,7 @@ h6 {
   display: flex;
 }
 
-.results_glucose-stroke-gradient {
+.results_eddge-stroke-gradient {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2917,7 +2917,7 @@ h6 {
   margin-right: auto;
 }
 
-.results_glucose-flex {
+.results_eddge-flex {
   grid-row-gap: 1.25rem;
   flex-flow: column;
   justify-content: space-between;
@@ -2927,7 +2927,7 @@ h6 {
   display: flex;
 }
 
-.results_glucose-box-content {
+.results_eddge-box-content {
   z-index: 2;
   border-radius: calc(var(--global-size--border-radius-22px)  - var(--global-size--glucose-border-with));
   justify-content: center;
@@ -3097,13 +3097,13 @@ h6 {
   inset: 0%;
 }
 
-.results_glucose-icon {
+.results_eddge-icon {
   flex: none;
   width: 1.75rem;
   height: 1.75rem;
 }
 
-.results_glucose-center {
+.results_eddge-center {
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
@@ -3903,7 +3903,7 @@ h6 {
   inset: 18.75rem auto auto .625rem;
 }
 
-.results_glucose-box {
+.results_eddge-box {
   background-image: linear-gradient(90deg, #004d40, #00695c 22%, #2e7d32 61%, #aed581);
   justify-content: center;
   align-items: center;
@@ -4577,18 +4577,18 @@ h6 {
   background-image: linear-gradient(#fff, #f7f7f7 30%);
 }
 
-.results_glucose-stroke {
+.results_eddge-stroke {
   z-index: -1;
   position: absolute;
 }
 
-.results_glucose-stroke.is-top {
+.results_eddge-stroke.is-top {
   width: 2.68rem;
   height: 2.31rem;
   inset: -1.25rem -2.4375rem auto auto;
 }
 
-.results_glucose-stroke.is-bottom {
+.results_eddge-stroke.is-bottom {
   width: 2.31rem;
   height: 2.68rem;
   inset: auto auto -1.75rem -.93rem;
@@ -4744,7 +4744,7 @@ h6 {
   line-height: 1.1;
 }
 
-.results_glucose-label {
+.results_eddge-label {
   z-index: 2;
   grid-column-gap: .25rem;
   background-color: #fff;
@@ -4756,11 +4756,11 @@ h6 {
   box-shadow: 0 .375rem 1.875rem #00000012;
 }
 
-.results_glucose-label.bottom-label {
+.results_eddge-label.bottom-label {
   margin-right: auto;
 }
 
-.results_glucose-label.top-label {
+.results_eddge-label.top-label {
   margin-left: auto;
 }
 
@@ -4990,7 +4990,7 @@ h6 {
   margin-top: .125rem;
 }
 
-.results_glucose-box-gradient {
+.results_eddge-box-gradient {
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -4998,7 +4998,7 @@ h6 {
   inset: 0%;
 }
 
-.results_glucose-box-gradient.is-hover {
+.results_eddge-box-gradient.is-hover {
   opacity: 0;
   display: none;
 }
@@ -6588,16 +6588,16 @@ h6 {
     font-size: 1.75rem;
   }
 
-  .results_glucose-label {
+  .results_eddge-label {
     padding-top: .37rem;
     padding-bottom: .37rem;
   }
 
-  .results_glucose-label.bottom-label {
+  .results_eddge-label.bottom-label {
     margin-left: .75rem;
   }
 
-  .results_glucose-label.top-label {
+  .results_eddge-label.top-label {
     margin-right: .75rem;
   }
 
@@ -6764,3 +6764,4 @@ h6 {
     justify-self: center;
   }
 }
+

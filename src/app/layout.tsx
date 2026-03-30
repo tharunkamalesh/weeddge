@@ -2,10 +2,36 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
+  : new URL("https://example.com");
+
 export const metadata: Metadata = {
   title: "EDDGE — AI learning platform for students",
   description:
     "AI-powered education for Indian students: instant doubt solving, smart exam prep, mock tests, and personalized analytics.",
+  metadataBase: siteUrl,
+  openGraph: {
+    type: "website",
+    title: "EDDGE — AI learning platform for students",
+    description:
+      "AI-powered education for Indian students: instant doubt solving, smart exam prep, mock tests, and personalized analytics.",
+    images: [
+      {
+        url: "/eddge-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EDDGE logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EDDGE — AI learning platform for students",
+    description:
+      "AI-powered education for Indian students: instant doubt solving, smart exam prep, mock tests, and personalized analytics.",
+    images: ["/eddge-logo.png"],
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
         />
-        <link rel="icon" href="/eddge-logo.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body suppressHydrationWarning>
         <Script id="lifer-webflow-preamble" strategy="beforeInteractive">

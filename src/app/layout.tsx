@@ -50,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
         />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/new.ico" type="image/x-icon" />
       </head>
       <body suppressHydrationWarning>
         <Script id="lifer-webflow-preamble" strategy="beforeInteractive">

@@ -21,10 +21,14 @@ for old, new in replacements.items():
 
 # Image updates
 image_updates = {
-    'edu-img-1.jpg': 'study_plan_modern.png',
-    'premium_how_it_works_bg.png': 'how_it_works_premium.png',
-    'edu-img-3.jpg': 'premium_results_bg.png',
-    'edu-img-4.jpg': 'premium_tutor_bg.png'
+    'edu-img-1.jpg': 'premium_study.jpg',
+    'premium_how_it_works_bg.png': 'premium_tablet.jpg',
+    'edu-img-3.jpg': 'premium_student.jpg',
+    'edu-img-4.jpg': 'premium_library.jpg',
+    'study_plan_modern.png': 'premium_study.jpg',
+    'how_it_works_premium.png': 'premium_tablet.jpg',
+    'premium_results_bg.png': 'premium_student.jpg',
+    'premium_tutor_bg.png': 'premium_library.jpg'
 }
 
 for old, new in image_updates.items():

@@ -23,12 +23,14 @@ for old, new in replacements.items():
 image_updates = {
     'edu-img-1.jpg': 'premium_study.jpg',
     'premium_how_it_works_bg.png': 'premium_tablet.jpg',
-    'edu-img-3.jpg': 'premium_student.jpg',
-    'edu-img-4.jpg': 'premium_library.jpg',
+    'edu-img-3.jpg': 'premium_library.jpg',
+    'edu-img-4.jpg': 'premium_student.jpg',
     'study_plan_modern.png': 'premium_study.jpg',
     'how_it_works_premium.png': 'premium_tablet.jpg',
     'premium_results_bg.png': 'premium_student.jpg',
-    'premium_tutor_bg.png': 'premium_library.jpg'
+    'premium_tutor_bg.png': 'premium_library.jpg',
+    'premium_student.jpg': 'premium_results.jpg', # Upgrade the results card image
+    'premium_library.jpg': 'premium_tutor.jpg'     # Upgrade the background section
 }
 
 for old, new in image_updates.items():

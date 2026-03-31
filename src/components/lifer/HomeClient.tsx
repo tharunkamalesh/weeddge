@@ -10,6 +10,6 @@ const LiferRuntime = dynamic(
   { ssr: true, loading: () => null }
 );
 
-export function HomeClient({ initialHtml }: { initialHtml: string }) {
-  return <LiferRuntime initialHtml={initialHtml} />;
+export function HomeClient({ initialHtml }: { initialHtml?: string }) {
+  return <LiferRuntime initialHtml={initialHtml || ""} />;
 }

@@ -2,34 +2,39 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-  : new URL("https://example.com");
-
 export const metadata: Metadata = {
-  title: "EDDGE — AI learning platform for students",
+  title: "Weeddge - Best Online Learning Platform for CBSE & ICSE Students",
   description:
-    "AI-powered education for Indian students: instant doubt solving, smart exam prep, mock tests, and personalized analytics.",
-  metadataBase: siteUrl,
+    "Weeddge is a smart online learning platform for CBSE and ICSE students. Get personalized tutoring, exam preparation, and AI-powered study support.",
+  keywords: [
+    "online learning India",
+    "CBSE preparation",
+    "ICSE study platform",
+    "student tutoring app",
+    "education platform India",
+  ],
+  metadataBase: new URL("https://weeddge.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
-    title: "EDDGE — AI learning platform for students",
-    description:
-      "AI-powered education for Indian students: instant doubt solving, smart exam prep, mock tests, and personalized analytics.",
+    title: "Weeddge Learning Platform",
+    description: "Every student deserves a tutor that never clocks out.",
+    url: "https://weeddge.com",
     images: [
       {
         url: "/eddge-logo.png",
         width: 1200,
         height: 630,
-        alt: "EDDGE logo",
+        alt: "Weeddge logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EDDGE — AI learning platform for students",
-    description:
-      "AI-powered education for Indian students: instant doubt solving, smart exam prep, mock tests, and personalized analytics.",
+    title: "Weeddge Learning Platform",
+    description: "Smart tutoring for students",
     images: ["/eddge-logo.png"],
   },
 };

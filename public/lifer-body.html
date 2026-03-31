@@ -292,6 +292,119 @@ margin: 0rem !important;
  }
 }
 
+/* Student Dashboard Section */
+.section_student-dashboard {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.student-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.student-dashboard-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 1rem;
+  background: rgba(94, 250, 136, 0.12);
+  border: 1px solid rgba(94, 250, 136, 0.40);
+  border-radius: 999px;
+  font-family: "Eina 03 Webfont", Eina, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2E7D32;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.01em;
+}
+
+.student-dashboard-heading {
+  font-family: "Eina 03 Webfont", Eina, sans-serif;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.06rem;
+  color: #1f2022;
+  margin: 0 0 1.25rem 0;
+}
+
+.student-dashboard-desc {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.student-dashboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.student-dashboard-list li {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.student-dashboard-list .check-icon {
+  color: #2E7D32;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.student-dashboard-image {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.10), 0 4px 16px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(135deg, #E8F5E9, #F1F8E9);
+  min-height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-dash-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 1.25rem;
+}
+
+@media screen and (max-width: 991px) {
+  .student-dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 0;
+  }
+  .student-dashboard-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .student-dashboard-heading {
+    font-size: 2rem;
+    letter-spacing: -0.04rem;
+  }
+  .student-dashboard-grid {
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+}
  
  
 </style></div><div class="draft-style w-embed"><style>
@@ -915,7 +1028,7 @@ background:conic-gradient(from 0 at 50% 50%,
 <stop offset="1" stop-color="#E8F5E9"/>
 </linearGradient>
 </defs>
-</svg></div></div></div></div></div></section></div><section class="section_trusted"><div class="padding-global padding-section-small padding-section_trusted"><div><div class="trusted_content"><div class="heading-component flex-center"><p class="trusted-heading">Used by <strong class="text-weight-medium text-color-primary">students</strong> across schools in India</p></div><div class="trusted_logo-wrapper"><div class="trusted_logo-group"><div class="trusted_logo-line"><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52e1947f7c29785a280_logo.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2c2_logo-1.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2ac_logo-2.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2a6_logo-3.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2be_logo-4.svg" class="trusted_logo-image"/></div><div class="trusted_logo-line"><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52e1947f7c29785a280_logo.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2c2_logo-1.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2ac_logo-2.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2a6_logo-3.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2be_logo-4.svg" class="trusted_logo-image"/></div><div class="trusted_logo-line"><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52e1947f7c29785a280_logo.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2c2_logo-1.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2ac_logo-2.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2a6_logo-3.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2be_logo-4.svg" class="trusted_logo-image"/></div><div class="trusted_logo-line"><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52e1947f7c29785a280_logo.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2c2_logo-1.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2ac_logo-2.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2a6_logo-3.svg" class="trusted_logo-image"/><img loading="lazy" height="38" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e52f1947f7c29785a2be_logo-4.svg" class="trusted_logo-image"/></div><div class="trusted_logo-mask"><div class="trusted_logo-mask-white"></div><div class="trusted_logo-gradient-absolute"></div><div class="trusted_logo-mask-white"></div></div></div></div></div></div></div></section><section id="Product-section" class="section_about"><div class="padding-global padding-section-large padding-section_about"><div class="container-large container-full"><div class="about_content-wrapper"><div class="container-medium z-index-2"><div class="about_content"><div class="about_grid"><div id="w-node-_857ee776-0ced-0c85-031e-cb8631e11d15-3acdfb3d" class="about_heading"><h2 class="heading-h2-64px reveal-type">Education needs <span class="about_text-gradient">intelligent support</span>. Without help after class, exam prep stays generic and overwhelming.<br/><br/>EDDGE brings <span class="about_text-gradient">doubt solving</span>, mock tests, and answer evaluation into one AI workspace aligned with CBSE, ICSE, and state boards.<br/><br/>Traditional tools cannot scale <span class="about_text-gradient">personal tutoring</span>. We built EDDGE to bridge that gap — student-first, privacy-aware, and teacher-friendly.</h2></div></div><div class="about_gradient-root"><div class="blur about_blur-1"><img sizes="(max-width: 1008px) 100vw, 1008px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp 1008w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5421947f7c29785b378_about%20mob%201.webp" alt="" class="image img-mob"/></div><div class="blur about_blur-2"><img sizes="(max-width: 1085px) 100vw, 1085px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp 1085w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5431947f7c29785b48f_about%20mob%202.webp" alt="" class="image img-mob"/></div><div class="blur about_blur-3"><img sizes="(max-width: 1102px) 100vw, 1102px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%203.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%25203-p-800.png 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%25203-p-1080.png 1080w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%203.webp 1102w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%203.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5431947f7c29785b3a8_about%20mob%203.webp" alt="" class="image img-mob"/></div><div class="blur about_blur-4"><img sizes="(max-width: 1159px) 100vw, 1159px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%25204-p-500.png 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%25204-p-800.png 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%25204-p-1080.png 1080w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%204.webp 1159w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%204.webp" loading="lazy" class="image img-desk"/><img sizes="100vw" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5441947f7c29785b512_about%20mob%204.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5441947f7c29785b512_about%20mob%204.webp 536w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5441947f7c29785b512_about%20mob%204.webp" loading="lazy" class="image img-mob"/></div><div class="blur about_blur-5"><img sizes="(max-width: 994px) 100vw, 994px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp 994w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5411947f7c29785b367_about%20mob%205.webp" alt="" class="image img-mob"/></div></div></div></div></div></div></div></section><section id="Features-section" data-gsap-standart="" class="section_standart"><div class="padding-global padding-section-large"><div class="container-medium"><div class="standart_content"><div class="standart_heading"><div data-gsap-standart-h2="" class="heading-component max-width-medium"><h2 js-line-headings-section="" class="heading-h2-48px">One AI platform for all academic needs</h2></div><div data-gsap-standart-button="" class="standart_btn"><a data-gsap-button="" href="/benefits" class="button is-icon w-inline-block"><div class="button_flex"><div class="button-label-inner hide-mobile-portrait"><div js-char-button="" class="button-label hide-mobile-portrait">Explore features</div></div><div class="button_icon"><div class="icon-1x1 w-embed"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+</svg></div></div></div></div></div></section></div><section class="section_student-dashboard"><div class="padding-global padding-section-large"><div class="container-medium"><div class="student-dashboard-grid"><div class="student-dashboard-text"><div class="student-dashboard-badge">Student Dashboard</div><h2 class="student-dashboard-heading">Built for real<br/>student progress.</h2><p class="student-dashboard-desc">Track your learning, stay consistent, and <strong>improve</strong><br/>every day — all from one simple dashboard.</p><ul class="student-dashboard-list"><li><span class="check-icon">✓</span> <strong>Daily streaks</strong> to stay consistent</li><li><span class="check-icon">✓</span> Track syllabus completion &amp; progress</li><li><span class="check-icon">✓</span> AI-powered study suggestions</li><li><span class="check-icon">✓</span> Practice, revise, and improve in one place</li></ul></div><div class="student-dashboard-image"><img src="/dashboard-preview.png" alt="EDDGE Student Dashboard" class="image student-dash-img" onerror="this.style.background='linear-gradient(135deg,#E8F5E9,#F1F8E9)';this.removeAttribute('onerror')"/></div></div></div></div></section><section id="Product-section" class="section_about"><div class="padding-global padding-section-large padding-section_about"><div class="container-large container-full"><div class="about_content-wrapper"><div class="container-medium z-index-2"><div class="about_content"><div class="about_grid"><div id="w-node-_857ee776-0ced-0c85-031e-cb8631e11d15-3acdfb3d" class="about_heading"><h2 class="heading-h2-64px reveal-type">Education needs <span class="about_text-gradient">intelligent support</span>. Without help after class, exam prep stays generic and overwhelming.<br/><br/>EDDGE brings <span class="about_text-gradient">doubt solving</span>, mock tests, and answer evaluation into one AI workspace aligned with CBSE, ICSE, and state boards.<br/><br/>Traditional tools cannot scale <span class="about_text-gradient">personal tutoring</span>. We built EDDGE to bridge that gap — student-first, privacy-aware, and teacher-friendly.</h2></div></div><div class="about_gradient-root"><div class="blur about_blur-1"><img sizes="(max-width: 1008px) 100vw, 1008px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp 1008w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53c1947f7c29785b04a_blur%201.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5421947f7c29785b378_about%20mob%201.webp" alt="" class="image img-mob"/></div><div class="blur about_blur-2"><img sizes="(max-width: 1085px) 100vw, 1085px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp 1085w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53e1947f7c29785b15f_blur%202.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5431947f7c29785b48f_about%20mob%202.webp" alt="" class="image img-mob"/></div><div class="blur about_blur-3"><img sizes="(max-width: 1102px) 100vw, 1102px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%203.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%25203-p-800.png 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%25203-p-1080.png 1080w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%203.webp 1102w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b27a_blur%203.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5431947f7c29785b3a8_about%20mob%203.webp" alt="" class="image img-mob"/></div><div class="blur about_blur-4"><img sizes="(max-width: 1159px) 100vw, 1159px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%25204-p-500.png 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%25204-p-800.png 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%25204-p-1080.png 1080w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%204.webp 1159w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5401947f7c29785b2ae_blur%204.webp" loading="lazy" class="image img-desk"/><img sizes="100vw" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5441947f7c29785b512_about%20mob%204.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5441947f7c29785b512_about%20mob%204.webp 536w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5441947f7c29785b512_about%20mob%204.webp" loading="lazy" class="image img-mob"/></div><div class="blur about_blur-5"><img sizes="(max-width: 994px) 100vw, 994px" srcset="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp 500w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp 800w, https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp 994w" alt="" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e53d1947f7c29785b0f3_blur%205.webp" loading="lazy" class="image img-desk"/><img loading="lazy" src="https://cdn.prod.website-files.com/66a3e3bd14091f433acdfb36/66a3e5411947f7c29785b367_about%20mob%205.webp" alt="" class="image img-mob"/></div></div></div></div></div></div></div></section><section id="Features-section" data-gsap-standart="" class="section_standart"><div class="padding-global padding-section-large"><div class="container-medium"><div class="standart_content"><div class="standart_heading"><div data-gsap-standart-h2="" class="heading-component max-width-medium"><h2 js-line-headings-section="" class="heading-h2-48px">One AI platform for all academic needs</h2></div><div data-gsap-standart-button="" class="standart_btn"><a data-gsap-button="" href="/benefits" class="button is-icon w-inline-block"><div class="button_flex"><div class="button-label-inner hide-mobile-portrait"><div js-char-button="" class="button-label hide-mobile-portrait">Explore features</div></div><div class="button_icon"><div class="icon-1x1 w-embed"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.25 15.075L5.425 16.25L15.0833 6.59167L15.0833 12.0833L16.75 12.0833L16.75 3.75L8.41667 3.75L8.41667 5.41667L13.9083 5.41667L4.25 15.075Z" fill="#1F2022"/>
 </svg></div></div></div><div class="button_bg-gradient"></div></a></div></div><div data-gsap-standart-grid="" class="standart_grid"><div class="standart_card"><div class="standart_card-text"><h3 class="heading-h3 standart_h3-margin-top"><span class="stage-inner"><span data-start="1" data-end="3" class="stage"><span class="number">1</span></span></span><span>-</span><span class="stage-inner"><span data-start="1" data-end="5" class="stage"><span class="number">1</span></span></span></h3><p class="text-size-16px">Sign up in minutes</p></div><div class="standart_card-bg"></div></div><div class="standart_card"><div class="standart_card-text"><h3 class="heading-h3 standart_h3-margin-top"><span class="stage-inner char-two"><span data-start="1" data-end="24" class="stage"><span class="number">1</span></span></span><span>/7</span></h3><p class="text-size-16px">24/7 AI doubt solving</p></div><div class="standart_card-bg"></div></div><div class="standart_card"><div class="standart_card-text"><h3 class="heading-h3 standart_h3-margin-top"><span class="stage-inner char-two"><span data-start="1" data-end="20" class="stage"><span class="number">1</span></span></span><span>m</span></h3><p class="text-size-16px">Practice, mocks &amp; PYQs</p></div><div class="standart_card-bg"></div></div><div class="standart_card"><div class="standart_card-text"><h3 class="heading-h3 standart_h3-margin-top"><span class="stage-inner"><span data-start="1" data-end="5" class="stage"><span class="number">1</span></span></span><span>x</span></h3><p class="text-size-16px">Analytics &amp; study plans</p></div><div class="standart_card-bg"></div></div></div></div></div></div></section><section id="How-it-works-section" data-gsap-control="" class="section_control"><div class="padding-global padding-section-large"><div class="container-medium"><div class="control_wrapper is-desk"><div class="control_card left-card"><div class="control_card-content"><div class="control_card-img-absolute"><img sizes="(max-width: 600px) 100vw, 600px" srcset="/premium_study.jpg 600w" alt="" src="/premium_study.jpg" loading="lazy" class="image"/></div><div class="control_card-box"><div class="control_card-icon-text"><div class="icon-1x1-small w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_0_9295)">

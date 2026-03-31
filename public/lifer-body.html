@@ -482,11 +482,254 @@ background:conic-gradient(from 0 at 50% 50%,
   background-size: 100% 100%;
   background-position: 0% 0%;
 }
+
+/* Contact Form Styles */
+.contact-form-container {
+  display: flex;
+  background: #fff;
+  border-radius: 1.875rem;
+  overflow: hidden;
+  border: 1px solid #E8F5E9;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Eina 03 Webfont", Eina, "Helvetica Neue Cyr", sans-serif;
+}
+
+.contact-info-panel {
+  background: linear-gradient(160deg, #1B5E20 0%, #2E7D32 45%, #43A047 100%);
+  color: white;
+  padding: 3rem;
+  width: 38%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.875rem;
+}
+
+.contact-info-panel h3 {
+  font-family: "Eina 03 Webfont", Eina, sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.contact-info-panel p {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-item span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.contact-item .icon-svg {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.12);
+  border-radius: 0.625rem;
+  padding: 0.375rem;
+  flex-shrink: 0;
+}
+
+.contact-info-panel::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  right: -2rem;
+  width: 10rem;
+  height: 10rem;
+  background: radial-gradient(circle, rgba(129,199,132,0.25) 0%, rgba(174,213,129,0.08) 60%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-info-panel::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  width: 8rem;
+  height: 8rem;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-form-panel {
+  padding: 3rem;
+  width: 62%;
+  background: #fff;
+}
+
+.contact-form-panel .form-heading {
+  font-family: "Eina 03 Webfont", Eina, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2022;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.contact-form-panel .form-subheading {
+  font-size: 0.875rem;
+  color: #989898;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  color: #1f2022;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  border: 1.5px solid #E8F5E9;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: #FAFAFA;
+  color: #1f2022;
+  font-family: inherit;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+  color: #BDBDBD;
+  font-weight: 300;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  border-color: #81C784;
+  box-shadow: 0 0 0 3px rgba(129,199,132,0.15);
+  background: #fff;
+}
+
+.form-group textarea {
+  resize: none;
+  min-height: 5rem;
+}
+
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23989898' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.send-btn {
+  background: linear-gradient(90deg, #1B5E20 0%, #2E7D32 60%, #43A047 100%);
+  color: white;
+  border: none;
+  padding: 0.875rem 2.5rem;
+  border-radius: 100rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+  letter-spacing: 0.01em;
+  position: relative;
+  overflow: hidden;
+}
+
+.send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(27,94,32,0.25);
+}
+
+.send-btn:active {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 991px) {
+  .contact-form-container {
+    flex-direction: column;
+    border-radius: 1.5rem;
+  }
+  .contact-info-panel, .contact-form-panel {
+    width: 100%;
+  }
+  .contact-info-panel {
+    padding: 2.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  .contact-form-panel {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+  .contact-info-panel {
+    padding: 2rem 1.5rem;
+  }
+  .contact-form-panel {
+    padding: 2rem 1.5rem;
+  }
+  .contact-info-panel h3 {
+    font-size: 1.375rem;
+  }
+}
 </style></div><div class="nav_fixed"><div data-nav-type="static" class="nav_component"><div class="padding-global is-navbar"><div class="nav_container"><div class="nav_menu-dropdown-root"><div data-lenis-toggle="" data-w-id="857ee776-0ced-0c85-031e-cb8631e11c47" class="nav_menu-dropdown"><div class="nav_menu-toggle"><div class="nav_brand-root"><div class="nav_brand"><img width="40" height="40" alt="EDDGE" src="/eddge-logo.png" loading="lazy" class="nav_logo eddge-brand-logo"/></div><div class="nav_brand-text">EDDGE</div></div><div class="nav_button is-mob"><div class="nav_button-icon"><div class="icon-1x1 w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.75 4.925L4.925 3.75L14.5833 13.4083L14.5833 7.91667L16.25 7.91667L16.25 16.25L7.91667 16.25L7.91667 14.5833L13.4083 14.5833L3.75 4.925Z" fill="#1F2022"/>
 </svg></div></div></div></div><div class="nav_menu-content"><div class="nav_menu-list"><div class="nav_menu-grid-link"><a href="/#Product-section" class="nav_menu_link">Product</a><a href="/#How-it-works-section" class="nav_menu_link">How It Works</a><a href="/#Pricing-section" class="nav_menu_link">Pricing</a><a href="/#Contact-section" class="nav_menu_link">Contact</a><a href="/#Students-section" class="nav_menu_link">For Students</a><a href="/#Pricing-section" class="nav_menu_link">For Schools</a></div><div class="nav_menu-social"><a href="https://www.linkedin.com/" class="text-size-14px">LinkedIn</a><a href="https://x.com/" class="text-size-14px">X</a><a href="https://www.youtube.com/" class="text-size-14px">YouTube</a></div></div></div><div class="nav_menu-backdrop-blur"></div></div><div data-w-id="857ee776-0ced-0c85-031e-cb8631e11c68" class="nav_menu-content-mob"><div class="nav_menu-list"><div class="nav_menu-grid-link"><a data-lenis-start="" href="/#Product-section" class="nav_menu_link">Product</a><a data-lenis-start="" href="/#How-it-works-section" class="nav_menu_link">How It Works</a><a data-lenis-start="" href="/#Pricing-section" class="nav_menu_link">Pricing</a><a data-lenis-start="" href="/#Contact-section" class="nav_menu_link">Contact</a><a data-lenis-start="" href="/#Students-section" class="nav_menu_link">For Students</a><a data-lenis-start="" href="/#Pricing-section" class="nav_menu_link">For Schools</a></div><div class="nav_menu-social"><a href="https://www.linkedin.com/" class="text-size-14px">LinkedIn</a><a href="https://x.com/" class="text-size-14px">X</a><a href="https://www.youtube.com/" class="text-size-14px">YouTube</a></div></div><div data-lenis-start="" class="nav_button-close"><a href="/#Hero-section" class="nav_button is-mob w-inline-block"><div class="nav_button-icon"><div class="icon-1x1 w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.75 4.925L4.925 3.75L14.5833 13.4083L14.5833 7.91667L16.25 7.91667L16.25 16.25L7.91667 16.25L7.91667 14.5833L13.4083 14.5833L3.75 4.925Z" fill="#1F2022"/>
-</svg></div></div></a></div></div></div><div class="nav_cta-button"><a data-gsap-button="" href="/#Students-section" class="button is-navbar-small w-inline-block"><div class="button-dot"></div><div class="button-label-inner"><div js-char-button="" class="button-label">Start Learning Free</div></div></a><a data-gsap-button="" href="/#Contact-section" class="button is-navbar-animation w-inline-block"><div data-bg-gradient-primary="" class="btn-navbar-border"><div data-bg-gradient-primary="" class="btn-navbar-bg-gradient"><div class="btn-navbar-bg-hover"></div></div><div class="btn-navbar-border-spin"></div><div class="btn-navbar-nover-gradient"></div></div><div class="btn-navbar-content"><div class="button-label-inner"><div js-char-button="" class="button-label">Request School Demo</div></div></div></a></div></div></div><div class="nav_bg-scroll"></div></div></div><main class="main-wrapper"><div class="overflow-hidden"><section id="Hero-section" class="section_hero"><div class="padding-global padding-global_full"><div class="hero_relative"><div data-hero-overfow="" class="hero_overflow-hidden"><div class="hero_content-wrapper"><div class="z-index-0"><div class="hero_content"><div class="hero_top"><div class="hero_tag"><div data-text-gradient="" class="hero_tag-text">CBSE · ICSE · State boards</div></div><div class="hero_text-button"><div class="hero_h1-description"><div class="heading-component"><h1 js-line-headings="" class="heading-h1 padding-bottom-16px">The AI Operating System for Students</h1></div><div class="description-component max-width-52ch"><p class="text-size-16px">EDDGE is an intelligent learning platform for Indian students— clear doubts instantly, practice smarter, and prepare for board exams with advanced AI.</p></div></div><a data-gsap-button-hero="" data-btn-hero-gradient="" href="/#Students-section" class="button is-hero-section w-inline-block"><div class="button-flex"><div class="button_icon-hero-root"><div class="button_icon-hero is-bottom"><div class="icon-1x1 w-embed"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+</svg></div></div></a></div></div></div><div class="nav_cta-button"><a data-gsap-button="" href="#Help-section" class="button is-navbar-animation w-inline-block"><div data-bg-gradient-primary="" class="btn-navbar-border"><div data-bg-gradient-primary="" class="btn-navbar-bg-gradient"><div class="btn-navbar-bg-hover"></div></div><div class="btn-navbar-border-spin"></div><div class="btn-navbar-nover-gradient"></div></div><div class="btn-navbar-content"><div class="button-label-inner"><div js-char-button="" class="button-label">Request School Demo</div></div></div></a></div></div></div><div class="nav_bg-scroll"></div></div></div><main class="main-wrapper"><div class="overflow-hidden"><section id="Hero-section" class="section_hero"><div class="padding-global padding-global_full"><div class="hero_relative"><div data-hero-overfow="" class="hero_overflow-hidden"><div class="hero_content-wrapper"><div class="z-index-0"><div class="hero_content"><div class="hero_top"><div class="hero_tag"><div data-text-gradient="" class="hero_tag-text">CBSE · ICSE · State boards</div></div><div class="hero_text-button"><div class="hero_h1-description"><div class="heading-component"><h1 js-line-headings="" class="heading-h1 padding-bottom-16px">The AI Operating System for Students</h1></div><div class="description-component max-width-52ch"><p class="text-size-16px">EDDGE is an intelligent learning platform for Indian students— clear doubts instantly, practice smarter, and prepare for board exams with advanced AI.</p></div></div><a data-gsap-button-hero="" data-btn-hero-gradient="" href="#Help-section" class="button is-hero-section w-inline-block"><div class="button-flex"><div class="button_icon-hero-root"><div class="button_icon-hero is-bottom"><div class="icon-1x1 w-embed"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_i_240_650_2)">
 <path d="M9.69436 0.697819C9.91761 0.0944811 10.771 0.0944805 10.9942 0.697819L13.2285 6.73579C13.2987 6.92548 13.4482 7.07503 13.6379 7.14522L19.6759 9.37948C20.2792 9.60273 20.2792 10.4561 19.6759 10.6793L13.6379 12.9136C13.4482 12.9838 13.2987 13.1333 13.2285 13.323L10.9942 19.361C10.771 19.9643 9.91761 19.9643 9.69436 19.361L7.46011 13.323C7.38991 13.1333 7.24036 12.9838 7.05067 12.9136L1.0127 10.6793C0.409361 10.4561 0.409361 9.60273 1.0127 9.37948L7.05067 7.14522C7.24036 7.07503 7.38991 6.92548 7.46011 6.73579L9.69436 0.697819Z" fill="#43A047"/>
 </g>
@@ -518,7 +761,7 @@ background:conic-gradient(from 0 at 50% 50%,
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_240_650"/>
 </filter>
 </defs>
-</svg></div></div></div><div class="button-label-root"><div class="button-label">Start Learning Free</div></div><div class="button-hero-gradient is-left"></div><div class="button-hero-gradient is-right"></div></div><div class="btn-hero-border-spin"></div></a></div></div><div class="hero_review"><div class="hero_review-text-block"></div><div class="hero_review-star"><div class="hero_review-star-icon"><div class="icon-1x1 w-embed"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+</svg></div></div></div><div class="button-label-root"><div class="button-label">Request School Demo</div></div><div class="button-hero-gradient is-left"></div><div class="button-hero-gradient is-right"></div></div><div class="btn-hero-border-spin"></div></a></div></div><div class="hero_review"><div class="hero_review-text-block"></div><div class="hero_review-star"><div class="hero_review-star-icon"><div class="icon-1x1 w-embed"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_i_0_8090)">
 <path d="M7.40623 0.98664C7.67557 0.539087 8.32443 0.539086 8.59377 0.986639L10.4819 4.12405C10.5787 4.28484 10.7365 4.39951 10.9193 4.44185L14.4866 5.26804C14.9955 5.3859 15.196 6.003 14.8536 6.39746L12.4532 9.16269C12.3302 9.3044 12.2699 9.48994 12.2861 9.67689L12.6027 13.3249C12.6479 13.8453 12.1229 14.2267 11.642 14.0229L8.27033 12.5945C8.09754 12.5213 7.90246 12.5213 7.72967 12.5945L4.35802 14.0229C3.87705 14.2267 3.35212 13.8453 3.39728 13.3249L3.71388 9.67689C3.73011 9.48994 3.66982 9.3044 3.54681 9.16269L1.14641 6.39746C0.803996 6.003 1.0045 5.3859 1.51338 5.26804L5.0807 4.44185C5.26352 4.39951 5.42135 4.28484 5.51811 4.12405L7.40623 0.98664Z" fill="#7CB342"/>
 </g>
@@ -763,7 +1006,7 @@ background:conic-gradient(from 0 at 50% 50%,
 </defs>
 </svg></div></div><div class="text-size-18px text-weight-medium">Stuck on hard questions</div></div><div data-w-id="857ee776-0ced-0c85-031e-cb8631e11e62" class="results_button-icon is-large"><div class="icon-1x1 w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.90735 14.649L8.90735 15.9783L19.8345 15.9783L16.728 19.0849L17.6708 20.0277L22.3848 15.3137L17.6708 10.5996L16.728 11.5424L19.8345 14.649L8.90735 14.649Z" fill="#322E24"/>
-</svg></div></div><div class="button_bg-gradient result_gradient"></div></div><div data-w-id="857ee776-0ced-0c85-031e-cb8631e11e65" class="results_card-bg-image"><img sizes="(max-width: 1238px) 100vw, 1238px" alt="Indian Students Celebrating" src="/premium_students.png" loading="lazy" class="image img-desk" style="object-fit: cover; width: 100%; height: 100%;"/><img sizes="100vw" alt="Indian Students Celebrating" src="/premium_students.png" loading="lazy" class="image img-mob" style="object-fit: cover; width: 100%; height: 100%;"/></div></div></div><div data-gsap-results-decription="" class="results_description"><div class="max-width-xsmall"><p class="text-size-16px">EDDGE combines AI tutoring, practice, and analytics so every study session moves the needle.</p></div></div></div></div></div></div></section><section data-gsap-time="" class="section_time"><div class="padding-global padding-section-large"><div class="container-medium"><div class="time_wrapper" style="background-image: url(&apos;/premium_tutor.jpg&apos;); background-size: cover; background-position: center;"><div class="time_content"><div class="time_text-block"><div data-gsap-time-h2="" class="heading-component max-width-50ch"><h2 js-line-headings-section="" class="heading-h2-48px heading-h2-20px-mob">Every student deserves a tutor that never clocks out</h2></div><div data-gsap-time-buttons="" class="button_flex"><a data-gsap-button="" href="/contacts" class="button w-inline-block"><div class="button-label-inner"><div js-char-button="" class="button-label">Request School Demo</div></div><div class="button_bg-gradient"></div></a><a data-gsap-button="" href="/prices" class="button is-blur w-inline-block"><div class="button-label-inner"><div js-char-button="" class="button-label">Start Learning Free</div></div></a></div></div></div></div></div></div></section><section class="section_review overflow-hidden"><div class="padding-global padding-section-large"><div class="container-medium"><div id="splide" class="splide review"><div class="splide__track review"><div class="splide__list"><div data-splide-interval="" class="splide__slide review"><div class="review_card"><div class="reveiw_card-text-block"><div class="reveiw_card-text-inner"><div class="reveiw_card-text-gradient"><div class="reveiw_card-text-scroll"><h2 class="heading-h2-56px h2-slide">&quot;The AI mock tests and PYQ practice on EDDGE improved my board prep— I finally know what to revise first.&quot;</h2></div></div></div><div class="reveiw_card-icon-root"><div class="reveiw_card-icon first-icon"><div class="icon-1x1 w-embed"><svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+</svg></div></div><div class="button_bg-gradient result_gradient"></div></div><div data-w-id="857ee776-0ced-0c85-031e-cb8631e11e65" class="results_card-bg-image"><img sizes="(max-width: 1238px) 100vw, 1238px" alt="Indian Students Celebrating" src="/premium_students.png" loading="lazy" class="image img-desk" style="object-fit: cover; width: 100%; height: 100%;"/><img sizes="100vw" alt="Indian Students Celebrating" src="/premium_students.png" loading="lazy" class="image img-mob" style="object-fit: cover; width: 100%; height: 100%;"/></div></div></div><div data-gsap-results-decription="" class="results_description"><div class="max-width-xsmall"><p class="text-size-16px">EDDGE combines AI tutoring, practice, and analytics so every study session moves the needle.</p></div></div></div></div></div></div></section><section data-gsap-time="" class="section_time"><div class="padding-global padding-section-large"><div class="container-medium"><div class="time_wrapper" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(&apos;/premium_tutor.jpg&apos;); background-size: cover; background-position: center; border-radius: 32px; overflow: hidden;"><div class="time_content"><div class="time_text-block"><div data-gsap-time-h2="" class="heading-component max-width-50ch"><h2 js-line-headings-section="" class="heading-h2-48px heading-h2-20px-mob" style="color: white;">Every student deserves a tutor that never clocks out</h2></div><div data-gsap-time-buttons="" class="button_flex"><a data-gsap-button="" href="#Help-section" class="button w-inline-block"><div class="button-label-inner"><div js-char-button="" class="button-label">Request School Demo</div></div><div class="button_bg-gradient"></div></a></div></div></div></div></div></div></section><section class="section_review overflow-hidden"><div class="padding-global padding-section-large"><div class="container-medium"><div id="splide" class="splide review"><div class="splide__track review"><div class="splide__list"><div data-splide-interval="" class="splide__slide review"><div class="review_card"><div class="reveiw_card-text-block"><div class="reveiw_card-text-inner"><div class="reveiw_card-text-gradient"><div class="reveiw_card-text-scroll"><h2 class="heading-h2-56px h2-slide">&quot;The AI mock tests and PYQ practice on EDDGE improved my board prep— I finally know what to revise first.&quot;</h2></div></div></div><div class="reveiw_card-icon-root"><div class="reveiw_card-icon first-icon"><div class="icon-1x1 w-embed"><svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M49.947 46.358C40.0485 58.2388 22.3928 59.8456 10.512 49.947C-1.36871 40.0485 -2.97557 22.3928 6.92302 10.512C16.8216 -1.36871 34.4773 -2.97557 46.358 6.92302C58.2388 16.8216 59.8456 34.4773 49.947 46.358Z" fill="white"/>
 <path d="M31 19.9998L31 17.9998M31 31.9998L31 29.9998M24 24.9998L26 24.9998M36 24.9998L38 24.9998M33.8 27.7998L35 28.9998M33.8 22.1998L35 20.9998M19 36.9998L28 27.9998M28.2 22.1998L27 20.9998" stroke="url(#paint0_linear_47_292)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
@@ -959,7 +1202,126 @@ background:conic-gradient(from 0 at 50% 50%,
 <stop offset="1" stop-color="#2E7D32"/>
 </linearGradient>
 </defs>
-</svg></div></div></div></div></div></div></div></div></div><div class="splide-control-panel review"><div class="splide-progress"><div class="splide-progress-bar"></div></div><div class="splide-pagination"><div id="review-fraction" class="splide-pagination-fraction">0/0</div><div class="text-size-14px">Reviews</div></div></div></div></div></div></section><section id="Help-section" data-gsap-answer="" class="section_answer"><div class="padding-global padding-section-large"><div class="container-medium"><div class="answer_wrapper"><div class="answer_border"><div class="answer_content"><div class="heading-component max-width-smedium"><h2 js-line-headings-section="" class="heading-h2-48px">Get answers to any<br/>academic question</h2></div><div data-gsap-answer-button="" class="answer_button"><a data-gsap-button="" href="/#Contact-section" class="button is-secondary w-inline-block"><div class="button-label-inner"><div js-char-button="" class="button-label">Get started free</div></div><div class="button_bg-gradient"></div></a></div><div class="answer_image-wrapper"><img loading="lazy" src="/eddge-logo.png" alt="EDDGE" class="image eddge-answer-logo"/></div></div></div></div></div></div></div></section></main><div class="footer_wrapper"><div class="unmask-footer-padding"></div><footer id="Contact-section" data-gsap-footer="" class="section_footer"><div class="padding-global padding-section-large"><div class="container-medium"><div class="footer_content"><div class="footer_top"><a data-gsap-footer-logo="" href="#Hero-section" class="footer_logo w-inline-block"><img loading="lazy" src="/eddge-logo.png" alt="EDDGE" class="image eddge-footer-logo"/></a><div class="heading-component max-width-smedium z-index-2"><h2 js-line-headings-section="" class="heading-h2-48px heading-h2-36px-mob">Start your AI learning journey today</h2><div class="footer_underline"><h2 aria-hidden="true" class="heading-h2-48px heading-h2-36px-mob"><span class="span-hidden">Start your AI learning journey </span><span class="z-index-1"><span class="span-hidden">today</span><span class="span-underline is-footer"><div class="icon-1x1 w-embed"><svg width="147" height="16" viewBox="0 0 147 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+</svg></div></div></div></div></div></div></div></div></div><div class="splide-control-panel review"><div class="splide-progress"><div class="splide-progress-bar"></div></div><div class="splide-pagination"><div id="review-fraction" class="splide-pagination-fraction">0/0</div><div class="text-size-14px">Reviews</div></div></div></div></div></div></section><section id="Help-section" data-gsap-answer="" class="section_answer"><div class="padding-global padding-section-large"><div class="container-medium">
+      <div class="contact-form-container">
+        <!-- Left Panel: Contact Information -->
+        <div class="contact-info-panel">
+          <h3>Get in Touch</h3>
+          <p>Whether you're a school administrator, teacher, or parent — we'd love to show you how EDDGE transforms learning.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="icon-svg w-embed">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l2.27-2.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span>+91 63745 82782</span>
+            </div>
+            
+            <div class="contact-item">
+              <div class="icon-svg w-embed">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span>support@eddge.com</span>
+            </div>
+            
+            <div class="contact-item">
+              <div class="icon-svg w-embed">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span>New Delhi, India</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Panel: Form Fields -->
+        <div class="contact-form-panel">
+          <div class="form-heading">Request a School Demo</div>
+          <div class="form-subheading">Fill in the details below and our team will reach out within 24 hours.</div>
+          <form id="eddge-contact-form" class="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input id="cf-name" type="text" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input id="cf-email" type="email" placeholder="name@school.edu" required />
+              </div>
+              <div class="form-group">
+                <label>School / Institution</label>
+                <input id="cf-school" type="text" placeholder="School name" required />
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input id="cf-phone" type="tel" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+              <div class="form-group">
+                <label>I am a</label>
+                <select id="cf-role" required>
+                  <option value="" disabled selected>Select your role</option>
+                  <option value="School Principal">School Principal</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Parent">Parent</option>
+                  <option value="Student">Student</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Number of Students</label>
+                <select id="cf-students">
+                  <option value="" disabled selected>Approx. count</option>
+                  <option value="1-50">1 – 50</option>
+                  <option value="51-200">51 – 200</option>
+                  <option value="201-500">201 – 500</option>
+                  <option value="500+">500+</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group full-width">
+              <label>Message</label>
+              <textarea id="cf-message" placeholder="Tell us about your requirements..." rows="3"></textarea>
+            </div>
+            
+            <div style="margin-top: 1.5rem;">
+              <button type="submit" class="send-btn">Request Demo</button>
+            </div>
+          </form>
+          <script>
+            document.getElementById('eddge-contact-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+              var name = document.getElementById('cf-name').value.trim();
+              var email = document.getElementById('cf-email').value.trim();
+              var school = document.getElementById('cf-school').value.trim();
+              var phone = document.getElementById('cf-phone').value.trim();
+              var role = document.getElementById('cf-role').value;
+              var students = document.getElementById('cf-students').value;
+              var message = document.getElementById('cf-message').value.trim();
+
+              var text = '*New EDDGE Demo Request*\n\n';
+              text += '👤 *Name:* ' + name + '\n';
+              text += '📧 *Email:* ' + email + '\n';
+              text += '🏫 *School:* ' + school + '\n';
+              text += '📞 *Phone:* ' + phone + '\n';
+              text += '🎓 *Role:* ' + role + '\n';
+              if (students) { text += '👥 *Students:* ' + students + '\n'; }
+              if (message) { text += '\n💬 *Message:*\n' + message; }
+
+              var waUrl = 'https://wa.me/916374582782?text=' + encodeURIComponent(text);
+              window.open(waUrl, '_blank');
+            });
+          </script>
+        </div>
+      </div>
+    </div></div></section></main><div class="footer_wrapper"><div class="unmask-footer-padding"></div><footer id="Contact-section" data-gsap-footer="" class="section_footer"><div class="padding-global padding-section-large"><div class="container-medium"><div class="footer_content"><div class="footer_top"><a data-gsap-footer-logo="" href="#Hero-section" class="footer_logo w-inline-block"><img loading="lazy" src="/eddge-logo.png" alt="EDDGE" class="image eddge-footer-logo"/></a><div class="heading-component max-width-smedium z-index-2"><h2 js-line-headings-section="" class="heading-h2-48px heading-h2-36px-mob">Start your AI learning journey today</h2><div class="footer_underline"><h2 aria-hidden="true" class="heading-h2-48px heading-h2-36px-mob"><span class="span-hidden">Start your AI learning journey </span><span class="z-index-1"><span class="span-hidden">today</span><span class="span-underline is-footer"><div class="icon-1x1 w-embed"><svg width="147" height="16" viewBox="0 0 147 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path id="footer-line" pathLength="1" d="M3 13C49.7892 6.25733 96.9501 3 144 3" stroke="url(#paint0_linear_463_797)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_463_797" x1="3" y1="8" x2="144" y2="8" gradientUnits="userSpaceOnUse">

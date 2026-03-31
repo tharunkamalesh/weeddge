@@ -7,9 +7,9 @@ const LiferRuntime = dynamic(
     import("@/components/lifer/LiferRuntime").then((m) => ({
       default: m.LiferRuntime,
     })),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => null }
 );
 
-export function HomeClient() {
-  return <LiferRuntime />;
+export function HomeClient({ initialHtml }: { initialHtml: string }) {
+  return <LiferRuntime initialHtml={initialHtml} />;
 }

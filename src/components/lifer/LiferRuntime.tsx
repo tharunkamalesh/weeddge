@@ -39,12 +39,17 @@ function runInlineScript(code: string, injected: HTMLScriptElement[]): void {
   injected.push(s);
 }
 
-export function LiferRuntime() {
+export function LiferRuntime({ initialHtml }: { initialHtml?: string }) {
   const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const el = rootRef.current;
     if (!el) return;
+
+    // Avoid hydration mismatch if initialHtml is present
+    if (initialHtml && el.innerHTML === "") {
+      el.innerHTML = initialHtml;
+    }
 
     let cancelled = false;
     const injectedScripts: HTMLScriptElement[] = [];
@@ -59,12 +64,15 @@ export function LiferRuntime() {
 
     (async () => {
       try {
-        const htmlRes = await fetch("/lifer-body.html", {
-          signal: ac.signal,
-        });
-        const html = await htmlRes.text();
-        if (cancelled) return;
-        el.innerHTML = html;
+        // If we don't have initialHtml, we fetch it (fallback)
+        if (!initialHtml) {
+          const htmlRes = await fetch("/lifer-body.html", {
+            signal: ac.signal,
+          });
+          const html = await htmlRes.text();
+          if (cancelled) return;
+          el.innerHTML = html;
+        }
 
         const runtimeRes = await fetch("/lifer-runtime.json", {
           signal: ac.signal,
@@ -95,15 +103,17 @@ export function LiferRuntime() {
       cancelled = true;
       ac.abort();
       cleanupInjectedScripts();
-      el.innerHTML = "";
+      // On unmount, clear content to avoid stale state
+      if (el) el.innerHTML = "";
     };
-  }, []);
+  }, [initialHtml]);
 
   return (
     <div
       ref={rootRef}
       id="lifer-mount"
       className="lifer-mount"
+      dangerouslySetInnerHTML={{ __html: initialHtml || "" }}
       suppressHydrationWarning
     />
   );

@@ -512,7 +512,7 @@ background:conic-gradient(from 0 at 50% 50%,
   font-family: "Eina 03 Webfont", Eina, sans-serif;
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
   letter-spacing: -0.03em;
   line-height: 1.2;
@@ -591,7 +591,7 @@ background:conic-gradient(from 0 at 50% 50%,
 .contact-form-panel .form-heading {
   font-family: "Eina 03 Webfont", Eina, sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1f2022;
   margin-bottom: 0.25rem;
   letter-spacing: -0.02em;
@@ -707,22 +707,40 @@ background:conic-gradient(from 0 at 50% 50%,
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
+  .contact-form-panel {
+    padding: 1.75rem;
+  }
+  .contact-info-panel {
+    padding: 2.25rem 1.75rem;
+  }
   .form-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.25rem;
   }
-  .form-group.full-width {
-    grid-column: span 1;
+  .contact-form-container {
+    border-radius: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .contact-form-panel {
+    padding: 1.5rem;
   }
   .contact-info-panel {
     padding: 2rem 1.5rem;
   }
-  .contact-form-panel {
-    padding: 2rem 1.5rem;
+  .contact-form-container {
+    border-radius: 1rem;
   }
   .contact-info-panel h3 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
+  }
+  .contact-form-panel .form-heading {
+    font-size: 1.125rem;
+  }
+  .form-group.full-width {
+    grid-column: span 1;
   }
 }
 </style></div><div class="nav_fixed"><div data-nav-type="static" class="nav_component"><div class="padding-global is-navbar"><div class="nav_container"><div class="nav_menu-dropdown-root"><div data-lenis-toggle="" data-w-id="857ee776-0ced-0c85-031e-cb8631e11c47" class="nav_menu-dropdown"><div class="nav_menu-toggle"><div class="nav_brand-root"><div class="nav_brand"><img width="40" height="40" alt="EDDGE" src="/eddge-logo.png" loading="lazy" class="nav_logo eddge-brand-logo"/></div><div class="nav_brand-text">EDDGE</div></div><div class="nav_button is-mob"><div class="nav_button-icon"><div class="icon-1x1 w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

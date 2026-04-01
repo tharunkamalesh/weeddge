@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://weeddge.com"),
-  applicationName: "Weeddge",
+  applicationName: "EDDGE",
   alternates: {
     canonical: "https://weeddge.com",
   },
-  title: "Weeddge – AI Learning Platform for CBSE & ICSE Students",
+  title: "EDDGE – AI Learning Platform for CBSE & ICSE Students",
   description:
     "AI-powered learning platform for Indian students with smart exam prep, mock tests, and personalized analytics.",
   icons: {
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     apple: "/new.ico",
   },
   openGraph: {
-    title: "Weeddge – AI Learning Platform",
+    title: "EDDGE – AI Learning Platform",
     description: "AI-powered education platform for students in India",
     url: "https://weeddge.com",
-    siteName: "Weeddge",
+    siteName: "EDDGE",
     images: [
       {
         url: "/og.png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Weeddge – AI Learning Platform",
+    title: "EDDGE – AI Learning Platform",
     description: "AI-powered education platform for students in India",
     images: ["/og.png"],
   },
